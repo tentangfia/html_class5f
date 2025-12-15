@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascript</title>
+</head>
+<body>
+
+	<center><iframe src="https://free.timeanddate.com/clock/ia6uexkz/n122/fcf99/ftb/pd2/tt0/tw0/ts1/tb4" frameborder="0" width="133" height="36"></iframe> 
+	</center>
+
+	<h2>Javascript changes content</h2>
+	<p id="content1">This is my first content</p>
+
+	<button type="button" onclick='document.getElementById("content1").innerHTML="This is my second content"'>Click here</button>
+
+	<h2>Javascript changes style</h2>
+	<p id="style1">I use Javascripts to change the style of my content</p>
+
+	<script>
+		function mystyle()
+		{
+			document.getElementById("style1").style.fontSize="40px";
+			document.getElementById("style1").style.color="red";
+			document.getElementById("style1").style.backgroundColor="yellow";
+			document.getElementById("style1").style.fontFamily="Lucida";
+		}
+	</script>
+
+	<button type="button" onclick="mystyle()">Click here</button>
+
+	<h3>Javascript manipulate image</h3>
+	
+	<script>
+		function myimage(a)
+		{
+			var pict;
+			if (a==1) 
+			{
+				pict="image/bungakertas.jpg"
+			}
+			else
+			{
+				pict="image/bungamerah.jpg"
+			}
+			document.getElementById('image').src=pict;
+		}
+	</script>
+
+	<img src="image/bungakertas.jpg" width="150" height="170" id="image">
+
+	<p>
+		<button type="button" onclick="myimage(1)">Picture A</button>
+		<button type="button" onclick="myimage(3)">Picture B</button>
+	</p>
+
+	<h2>Alert box</h2>
+	<script>
+		{
+			alert("Assalammualaikum. \nWelcome to my Webpage \nEnjoy browsing!")
+		}
+	</script>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.7802574915545!2d102.29871997475003!3d6.160177793827027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b6b17579b21171%3A0xc616283cb99b8f83!2s263%2C%20Jalan%20Padang%20Golf%2C%20Taman%20Kurnia%20Jaya%2C%2016100%20Pengkalan%20Chepa%2C%20Kelantan!5e0!3m2!1sen!2smy!4v1765158843404!5m2!1sen!2smy" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</body>
+</html>
